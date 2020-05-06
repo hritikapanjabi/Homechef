@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HomeChefs">
+    <meta name="keywords" content="food, recipes, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeChef: Delight Foodies with Secret Recipes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+<style>
+    .input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background:#F3F6FA;
+  color: black;
+  
+  text-align: center;
+  
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px  #F3F6FA ;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color:#F3F6FA;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+
+.btn:hover {
+  color:#FFC72C;
+}
+input[type="radio"]{
+  margin: 0 10px 0 15px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header style="position: -webkit-sticky;
+    position: sticky;
+    top: 0; z-index: 99999; background-color: #FFFFFF;">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i>Email</li>
+                                <li>News and updates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="./img/homechef.png" alt="HomeChefs logo"  height="100px" width="200px"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop-grid.html">Menu</a></li>                    
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                   
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2 ">                    
+                     <h1 ><i class="fa fa-user-circle-o "></i></h1>
+                </div>
+                <div class="col-lg-5 text-center ">                    
+                <h3>Register here!</h3>
+                <form method="POST">
+                    <br>
+
+
+
+
+                    <form action="/action_page.php" style="max-width:500px;margin:auto">
+                        
+                        <div class="input-container">
+                          <i class="fa fa-user icon"></i>
+                          <input class="input-field form-control form-rounded"" type="text" placeholder="Name" name="name">
+                        </div>
+                      
+                        <div class="input-container">
+                          <i class="fa fa-envelope icon"></i>
+                          <input class="input-field" type="email" placeholder="Email" name="email">
+                        </div>
+                        
+                        <div class="input-container">
+                          <i class="fa fa-key icon"></i>
+                          <input class="input-field" type="password" placeholder="Password" name="password">
+                        </div>                    
+                        <div class="input-container">
+                            <i class="fa fa-key icon"></i>
+                            <input class="input-field" type="password" placeholder="Confirm Password" name="confirmpassword">
+                          </div>
+                          <p style="color:black"> I am a</p>
+                          <label class="radio-inline">
+                            <input type="radio" name="accounttype" value="patron" checked>Patron
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="accounttype" value="homechef">Home Chef   
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="accounttype" value="partner">Partner   
+                          </label>
+                          <br><br>          
+
+                        <button type="submit" class="btn">Register</button>   
+                      </form>
+                    
+
+
+                      
+                </form>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>    
+
+          
+
+
+
+
+                        
+                        
+
+    
+
+
+    
+
+   
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="./img/homechef.png" alt="HomeChefs logo"></a>
+                        </div>
+                        <ul>
+                            <li><b>Customer Support:</b></li>
+                            <li>Phone: </li>
+                            <li>Email: </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        
+                        <form action="#">
+                            <input type="email" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
