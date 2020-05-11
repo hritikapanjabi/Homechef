@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HomeChefs">
+    <meta name="keywords" content="food, recipes, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeChef: Delight Foodies with Secret Recipes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+
+img.focus{
+               -webkit-transition: all 1s ease;
+                   -moz-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                     -ms-transition: all 1s ease;
+                            transition: all 1s ease; 
+                  }
+img focus:hover{
+                 border: 70px solid #000;
+                 border-radius:50%;
+               -webkit-transition: all 1s ease;
+                  -moz-transition: all 1s ease;
+                       -o-transition: all 1s ease;
+                    -ms-transition: all 1s ease;
+                           transition: all 1s ease; 
+                          }
+
+.carousel {
+  background:grey;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+
+.carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 230px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
+
+Resources
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header style="position: -webkit-sticky;
+    position: sticky;
+    top: 0; z-index: 99999; background-color: #FFFFFF;">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+
+                                <li><i class="fa fa-bars"></i></li>
+                                <li>
+                                    <a href="./index.html"><img src="./img/homechef.png" alt="HomeChefs logo" height="30px" width="50px"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-map-marker"></i> PUNE</a>
+
+                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+
+
+
+
+
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+      
+    </header>
+
+
+
+
+
+
+
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="carousel slide" id="main-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                    <li data-target="#main-carousel" data-slide-to="3"></li>
+                </ol><!-- /.carousel-indicators -->
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="./img/ss1.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="./img/ss2.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+                          
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="./img/ss3.jpeg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/ss4.jpg" alt="" class="d-block img-fluid">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+                        </div>
+                    </div>
+                </div><!-- /.carousel-inner -->
+                
+                <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only" aria-hidden="true">Prev</span>
+                </a>
+                <a href="#main-carousel" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only" aria-hidden="true">Next</span>
+                </a>
+            </div><!-- /.carousel -->
+      </div><!-- /.container -->
+    </section>
+    <!-- Hero Section End -->
+
+
+    <div class="container text-center border border-dark">    
+        <div class="section-title">
+                        <h2>Welcome To Home Chef</h2>
+                    </div>
+  
+  Home Chef is a platform which enables patrons to have homemade food from homemakers 
+  who wan to spread their magic from kitchen. The sheer purpose of this platform is to 
+  unleash the entrepreneur within women. Patrons have an oppurtunity to try out various 
+  secret recipes across India.
+
+  <br> 
+  
+</div><br>
+
+<div class="container">
+<div class="row ">
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="featured__item border border-dark">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                               
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6>Tasty Food</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="featured__item border border-dark">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6>Door Step Delivery</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="featured__item border border-dark">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                               
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6>Home Made</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="featured__item border border-dark">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6>Regional food</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+</div>
+<hr>
+
+
+
+
+
+
+<div class="container text-center ">    
+
+<div class="section-title">
+                   <div class="container my-4">
+     <h2>Reviews</h2><br>
+                    <i>What our customers have to say about us</i>
+
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-caption">
+        <h3><em>"Thankyou HomeChef for the amazing food."</em></h3>
+        <h2>John Doe, MD, XYZ ltd.</h2>
+       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+        <h3><em>"Your food is delicious."</em></h3>
+        <h2>Harry Patel, MD, XYZ ltd.</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+        <h3><em>"Amazing delivery service."</em></h3>
+        <h2>Mika Patil, MD, XYZ ltd.</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+        <h3><em>"Indeed worth the hype"</em></h3>
+        <h2>Johny, MD, XYZ ltd.</h2>
+      </div>
+    </div>
+  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<!-- lower carousel ends here-->                   
+</div>
+     
+</div>
+
+<div class="container">
+<div class="row">
+
+<p style="font-size: 18px; color:#FFC72C;font-weight: 700;display: inline-block;padding: 10px 20px 10px; "><br></p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad border" style="padding: 0%;">
+       
+            
+            
+            <div  style=" background-color:darkgray; width: 100%; padding:0%">
+            <div class="container">
+            <span style="font-size: 20px;"><i class="fa fa-cutlery" style="color:white"></i>  15K dishes served 
+           
+                <i class="fa fa-smile-o" style="color:white"></i>  100+ Home Chefs</span>
+            </div></div>
+
+            <div class="container ">
+            <div class="row" style="padding-top: 30px;">
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        
+                        <ul>
+                            <li><b>Information</b></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Support</h6>
+                        <ul>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Cancellations & Refunds</a></li>
+                            <li><a href="#">FaQs</a></li>
+                           
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Support</h6>
+                        <ul>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Cancellations & Refunds</a></li>
+                            <li><a href="#">FaQs</a></li>
+                           
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6 ">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+
+                        <form action="#">
+                            <input type="email" placeholder="Enter your mail" size="50">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(function(){
+    $('#carousel-example-generic').carousel();
+    });
+    </script>
+
+</body>
+
+</html>
