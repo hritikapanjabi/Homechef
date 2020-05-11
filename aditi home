@@ -24,6 +24,23 @@
 
     <style>
 
+img.focus{
+               -webkit-transition: all 1s ease;
+                   -moz-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                     -ms-transition: all 1s ease;
+                            transition: all 1s ease; 
+                  }
+img focus:hover{
+                 border: 70px solid #000;
+                 border-radius:50%;
+               -webkit-transition: all 1s ease;
+                  -moz-transition: all 1s ease;
+                       -o-transition: all 1s ease;
+                    -ms-transition: all 1s ease;
+                           transition: all 1s ease; 
+                          }
+
 .carousel {
   background:grey;
 }
@@ -305,48 +322,63 @@ Resources
 
 
     <!-- Footer Section Begin -->
-    <footer class="footer spad">
+    <footer class="footer spad border" style="padding: 0%;">
        
             
             
-            <div class="container bg-dark">
-            <span><i class="fa fa-cutlery" style="color:white"></i>  15K dishes served</span>
-            </div>
+            <div  style=" background-color:darkgray; width: 100%; padding:0%">
+            <div class="container">
+            <span style="font-size: 20px;"><i class="fa fa-cutlery" style="color:white"></i>  15K dishes served 
+           
+                <i class="fa fa-smile-o" style="color:white"></i>  100+ Home Chefs</span>
+            </div></div>
 
             <div class="container ">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="row" style="padding-top: 30px;">
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="footer__about">
-                        <div class="footer__about__logo">
-                            <a href="./index.html"><img src="./img/homechef.png" alt="HomeChefs logo"></a>
-                        </div>
+                        
                         <ul>
-                            <li><b>Customer Support:</b></li>
-                            <li>Phone: </li>
-                            <li>Email: </li>
+                            <li><b>Information</b></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+
+                <div class="col-lg-2 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Useful Links</h6>
+                        <h6>Support</h6>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Cancellations & Refunds</a></li>
+                            <li><a href="#">FaQs</a></li>
+                           
                         </ul>
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Support</h6>
+                        <ul>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Cancellations & Refunds</a></li>
+                            <li><a href="#">FaQs</a></li>
+                           
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6 ">
                     <div class="footer__widget">
                         <h6>Join Our Newsletter Now</h6>
 
                         <form action="#">
-                            <input type="email" placeholder="Enter your mail">
+                            <input type="email" placeholder="Enter your mail" size="50">
                             <button type="submit" class="site-btn">Subscribe</button>
                         </form>
                         <div class="footer__widget__social">
