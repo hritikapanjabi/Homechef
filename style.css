@@ -117,7 +117,7 @@ ol {
 -----------------------*/
 
 .section-title {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -127,17 +127,7 @@ ol {
 	position: relative;
 }
 
-.section-title h2:after {
-	position: absolute;
-	left: 0;
-	bottom: -15px;
-	right: 0;
-	height: 4px;
-	width: 80px;
-	background: #FFC72C;
-	content: "";
-	margin: 0 auto;
-}
+
 
 .set-bg {
 	background-repeat: no-repeat;
@@ -921,14 +911,12 @@ right:-10px;
 	transition: all, 0.5s;
 }
 
-.featured__item__pic__hover li a i {
-	position: relative;
-	transform: rotate(0);
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
+.featured__item__pic__hover li a {
+               -webkit-transition: all 1s ease;
+                  -moz-transition: all 1s ease;
+                       -o-transition: all 1s ease;
+                    -ms-transition: all 1s ease;
+                           transition: all 1s ease; 
 }
 
 .featured__item__text {
