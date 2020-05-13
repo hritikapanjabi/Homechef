@@ -82,7 +82,12 @@ anchors are inline so you need ot make them block to go full width
     </style>
 </head>
 
-<body>
+<body style="background-image: url('./img/bg.jpg');
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+
+  
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -91,7 +96,7 @@ anchors are inline so you need ot make them block to go full width
     <!-- Header Section Begin -->
     <header style="position: -webkit-sticky;
     position: sticky;
-    top: 0; z-index: 99999; background-color: #FFFFFF;">
+    top: 0; z-index: 10; background-color: #FFFFFF;">
         <div class="header__top">
             <div class="container">
                 <div class="row">
@@ -144,8 +149,9 @@ anchors are inline so you need ot make them block to go full width
 
     <!-- Nav Section Starts -->
 
-<div class="container bg-dark ">
-    <nav>
+<div class="container bg-dark " style="position: -webkit-sticky; /* Safari */
+position: sticky; top: 0; z-index: 20; width:75%;">
+    <nav >
         
 
         <label for="drop" class="toggle"><i class="fa fa-bars"></i></label>
@@ -170,8 +176,15 @@ anchors are inline so you need ot make them block to go full width
                 <li><a href="#">Track Order</a></li>
                 <li><a href="#">Checkout</a></li>
                 <li><a href="#">Stories</a></li>
-            </ul>
+               </ul>
+               <div class="search-container" style="padding-top: 11px; float: right;">
+                <form action="/action_page.php" >
+                  <input type="text" placeholder="Search.." name="search" ;">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
         </nav>
+        
     </div>
 
 
@@ -229,7 +242,7 @@ anchors are inline so you need ot make them block to go full width
     <!-- Hero Section End -->
 
 
-    <div class="container text-center border border-dark" style="width: 75%;">    
+    <div class="container text-center border border-dark" style="width: 75%; background-color:#F5F5F5;">    
         <div class="section-title"">
                         <h2>Welcome To Home Chef</h2>
                     </div>
@@ -246,13 +259,13 @@ anchors are inline so you need ot make them block to go full width
 <div class="container">
 <div class="row ">
                 <div class="col-lg-3 col-md-4 col-sm-6 ">
-                    <div class="featured__item border border-dark">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                    <div class="featured__item border border-dark" >
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg" >
                             <ul class="featured__item__pic__hover">
                                
                             </ul>
                         </div>
-                        <div class="featured__item__text">
+                        <div class="featured__item__text" >
                             <h6>Tasty Food</h6>
                             
                         </div>
@@ -340,7 +353,7 @@ anchors are inline so you need ot make them block to go full width
     </div>
 </div>
 </div>
-
+<hr>
 
     <!-- Featured Section Begin -->
     <section class="featured spad">
