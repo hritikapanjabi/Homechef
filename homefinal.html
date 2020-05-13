@@ -22,15 +22,130 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/navbar.css" type="text/css">
-
-
 
     <style>
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  filter: invert(1);
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
+
+/* Set a style for all buttons */
+button {
+  background-color: white;
+  color:black;
+ 
+  
+  border: black;
+  cursor: pointer;
+ 
+  
+}
+button#insidelogin {
+  background-color: #ff8547;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bolder;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+/* Center the image and position the close button */
+.startcontainer {
+  text-align: center;
+  font-weight: bold;
+  margin: 24px 0 12px 0;
+  position: relative;
+
+}
+
+
+
+.cancelandpswcontainer {
+  padding: 8px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffdb58 ;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #000000;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+}
+
 img.focus{
                -webkit-transition: all 1s ease;
                    -moz-transition: all 1s ease;
@@ -85,12 +200,7 @@ anchors are inline so you need ot make them block to go full width
     </style>
 </head>
 
-<body style="background-image: url('./img/bg.jpg');
-background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;">
-
-  
+<body>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -99,7 +209,7 @@ background-repeat: no-repeat;
     <!-- Header Section Begin -->
     <header style="position: -webkit-sticky;
     position: sticky;
-    top: 0; z-index: 10; background-color: #FFFFFF;">
+    top: 0; z-index: 99999; background-color: #FFFFFF;">
         <div class="header__top">
             <div class="container">
                 <div class="row">
@@ -128,14 +238,49 @@ background-repeat: no-repeat;
 
 
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user"></i>Login</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="startcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span> Hi there! Login to start
+              </div>
+          
+              <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit" id="insidelogin">Login</button>
+                
+              </div>
+              <p align="center"><a href="#"> Forgot password</a></p>  
+          <p align="center" color="black"> New user?<a href="#"> Create an account for free!</a></p>
+                
+              
+              
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
 
 
       
@@ -152,14 +297,13 @@ background-repeat: no-repeat;
 
     <!-- Nav Section Starts -->
 
-<div class="container bg-dark " style="position: -webkit-sticky; /* Safari */
-position: sticky; top: 0; z-index: 20; width:75%;">
-    <nav >
+
+    <nav>
         
 
-        <label for="drop" class="toggle"><i class="fa fa-bars"></i></label>
+        <label for="drop" class="toggle"><i class="fa fa-bars"></i><</label>
         <input type="checkbox" id="drop" />
-            <ul class="menu ">
+            <ul class="menu">
                <li><a href="#">Home's Chef</a></li>
                 <li><a href="#">My Account</a></li>
                 <li><a href="#">Explore</a></li>
@@ -179,17 +323,8 @@ position: sticky; top: 0; z-index: 20; width:75%;">
                 <li><a href="#">Track Order</a></li>
                 <li><a href="#">Checkout</a></li>
                 <li><a href="#">Stories</a></li>
-               </ul>
-               <div class="search-container" style="padding-top: 11px; float: right;">
-                <form action="/action_page.php" >
-                  <input type="text" placeholder="Search.." name="search" ;">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
+            </ul>
         </nav>
-        
-    </div>
-
 
      <!-- Nav Section Ends -->
     <!-- Hero Section Begin -->
@@ -245,7 +380,7 @@ position: sticky; top: 0; z-index: 20; width:75%;">
     <!-- Hero Section End -->
 
 
-    <div class="container text-center border border-dark" style="width: 75%; background-color:#F5F5F5;">    
+    <div class="container text-center border border-dark" style="width: 75%;">    
         <div class="section-title"">
                         <h2>Welcome To Home Chef</h2>
                     </div>
@@ -262,13 +397,13 @@ position: sticky; top: 0; z-index: 20; width:75%;">
 <div class="container">
 <div class="row ">
                 <div class="col-lg-3 col-md-4 col-sm-6 ">
-                    <div class="featured__item border border-dark" >
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg" >
+                    <div class="featured__item border border-dark">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
                             <ul class="featured__item__pic__hover">
                                
                             </ul>
                         </div>
-                        <div class="featured__item__text" >
+                        <div class="featured__item__text">
                             <h6>Tasty Food</h6>
                             
                         </div>
@@ -356,7 +491,7 @@ position: sticky; top: 0; z-index: 20; width:75%;">
     </div>
 </div>
 </div>
-<hr>
+
 
     <!-- Featured Section Begin -->
     <section class="featured spad">
