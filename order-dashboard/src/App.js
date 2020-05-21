@@ -1,28 +1,25 @@
 import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
 import 'office-ui-fabric-react/dist/css/fabric.css';
 import './App.css';
 
-import Navigation from './Navigation';
-import CardsSection from './CardsSection';
-import OperationsTable from './OperationsTable';
+import Navigation from './Components/Navigation';
+import CardsSection from './Components/CardsSection';
+import OperationsTable from './Components/OperationsTable';
+import ActiveOrders from './Components/ActiveOrders';
+import PastOrders from './Components/PastOrders';
+
+
 
 function App() {
   return (
-    <div className="ms-Grid" dir="ltr">
-      <div className="ms-Grid-row">
-        <div className="ms-Grid-col ms-sm2 ms-xl2">
-          <Navigation />
-        </div>
-        <div className="main-element ms-Grid-col ms-sm10 ms-xl10">
-          <div className="ms-Grid-row">
-            <CardsSection />
-          </div>
-          <div className="ms-Grid-row">
-            <OperationsTable />
-          </div>
-        </div>
-      </div>
+    <BrowserRouter>
+    <div className="App">
+     
+   <Route path= '/ActiveOrders' component={ActiveOrders}/> 
+   <Route path= '/PastOrders' component={PastOrders}/> 
     </div>
+    </BrowserRouter>
   );
 }
 
