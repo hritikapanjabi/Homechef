@@ -5,7 +5,10 @@
 .ms-Viewport {
   margin: 0 1.5%;
 }
+.mydiv {
+height:100px;
 
+}
 .ms-FocusZone {
   padding: 0;
 }
