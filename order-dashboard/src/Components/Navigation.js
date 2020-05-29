@@ -46,7 +46,7 @@ const links = [
       {
         name: 'Financials',
         key: 'key3',
-        url: '/',
+        url: '/Financials',
         iconProps: {
           iconName: 'Money',
           styles: {
@@ -60,7 +60,7 @@ const links = [
       {
         name: 'Analytics',
         key: 'key4',
-        url: '/',
+        url: '/Analytics',
         iconProps: {
           iconName: 'StackedLineChart',
           styles: {
