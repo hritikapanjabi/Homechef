@@ -8,8 +8,10 @@ import CardsSection from './Components/CardsSection';
 import OperationsTable from './Components/OperationsTable';
 import ActiveOrders from './Components/ActiveOrders';
 import PastOrders from './Components/PastOrders';
+import Financials from './Components/Financials';
+import Analytics from './Components/Analytics';
 
-
+ 
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
      
    <Route path= '/ActiveOrders' component={ActiveOrders}/> 
    <Route path= '/PastOrders' component={PastOrders}/> 
+   <Route path= '/Financials' component={Financials}/> 
+   <Route path= '/Analytics' component={Analytics}/> 
     </div>
     </BrowserRouter>
   );
